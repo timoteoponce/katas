@@ -1,12 +1,13 @@
 require "test/unit"
 
 class Node
-	attr_accessor :value, :left_node, :right_node
+	attr_accessor :value, :left_node, :right_node, :parent_node
 	
-	def initialize(value=nil, left_node=nil, right_node=nil)
+	def initialize(value=nil, left_node=nil, right_node=nil, parent_node = nil)
 		@value = value
 		@left_node = left_node
 		@right_node = right_node
+		@parent_node = parent_node
 	end	
 end
 
